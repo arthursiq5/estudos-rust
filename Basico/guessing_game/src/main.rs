@@ -1,6 +1,11 @@
+use rand::Rng;
 use std::io;
 
 fn main() {
+    let numero_secreto = rand::thread_rng().gen_range(1..=100);
+
+    println!("Número secreto: {numero_secreto}");
+
     println!("Adivinhe o número!");
     println!("Por favor, coloque seu palpite.");
 
